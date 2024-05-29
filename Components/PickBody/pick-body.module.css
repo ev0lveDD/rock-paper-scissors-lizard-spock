@@ -1,0 +1,66 @@
+.paperButton {
+    border: 25px solid var(--paper-color);
+  }
+  
+  .scissorsButton {
+    border: 25px solid var(--scissors-color);
+  }
+  
+  .rockButton {
+    border: 25px solid var(--rock-color);
+  }
+
+  .pickBodyWraper {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pickColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .pickColumn p {
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .pickColumn button {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: .6s;
+  }
+
+  .pickResultColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .pickResultColumn button {
+    background-color: #fff;
+    color: hsl(229, 25%, 31%);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    border: none;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

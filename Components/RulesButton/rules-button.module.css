@@ -1,0 +1,5 @@
+.rulesButton {
+    background-color: none;
+    border: 2px solid hsl(217, 16%, 45%);
+    width: 3rem;
+}
