@@ -72,6 +72,10 @@
     justify-content: center;
   }
 
+  .pickResultColumn button:hover {
+    color: hsl(349, 71%, 52%);
+  }
+
   .circleWave {
     top: 3rem;
     left: 0;
