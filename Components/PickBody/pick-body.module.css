@@ -119,6 +119,22 @@
     display: none;
   }
 
+  .pickLoaderContainer {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pickLoader {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #17223e;
+  }
+
   @keyframes waves {
     0% {
       transform: scale(1);

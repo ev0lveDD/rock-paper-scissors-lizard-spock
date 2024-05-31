@@ -7,7 +7,7 @@ import paperIcon from "@/public/icon-paper.svg";
 import scissorsIcon from "@/public/icon-scissors.svg";
 import rockIcon from "@/public/icon-rock.svg";
 
-export default function GameBody() {
+export default function GameBody({setPlayerPick, getHousePick}) {
     return(
         <div className={classes.gameBody}>
             <div className={classes.gameBodyBackgroundWraper}>
@@ -15,11 +15,17 @@ export default function GameBody() {
             </div>
             <div className={classes.gameBodyButtonsWraper}>
                 <div className={classes.gameButtonTopRow}>
-                    <button className={classes.paperButton}><Image src={paperIcon} alt="Paper Icon" height={50} width={50}/></button>
-                    <button className={classes.scissorsButton}><Image src={scissorsIcon} alt="Scissors Icon" height={50} width={50}/></button>
+                    <button className={classes.paperButton} onClick={()=>{setPlayerPick("paper");getHousePick()}}>
+                        <Image src={paperIcon} alt="Paper Icon" height={50} width={50}/>
+                    </button>
+                    <button className={classes.scissorsButton} onClick={()=>{setPlayerPick("scissors");getHousePick()}}>
+                        <Image src={scissorsIcon} alt="Scissors Icon" height={50} width={50}/>
+                    </button>
                 </div>
                 <div className={classes.gameButtonBottomRow}>
-                    <button className={classes.rockButton}><Image src={rockIcon} alt="Rock Icon" height={50} width={50}/></button>
+                    <button className={classes.rockButton} onClick={()=>{setPlayerPick("rock");getHousePick()}}>
+                        <Image src={rockIcon} alt="Rock Icon" height={50} width={50}/>
+                    </button>
                 </div>
             </div>
         </div>
