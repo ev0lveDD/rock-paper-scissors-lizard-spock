@@ -1,0 +1,45 @@
+.modalWraper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    border: none;
+}
+
+.contentWraper {
+    width: 22vw;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modalHeader {
+    width: 85%;
+    margin: 1.5rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalHeader h1 {
+    color: hsl(229, 25%, 31%);
+    font-size: 24px;
+}
+
+.modalHeader button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}

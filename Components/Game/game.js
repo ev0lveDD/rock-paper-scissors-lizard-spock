@@ -1,6 +1,7 @@
 'use client';
 import classes from "./game.module.css";
 import { useState, useEffect } from "react";
+import {Suspense} from "react";
 
 import GameHeader from "@/Components/GameHeader/game-header";
 import GameBody from "@/Components/GameBody/game-body";
@@ -81,8 +82,9 @@ export default function Game() {
         <PickBody playerPick={playerPick} housePick={housePick} winner={winner} restartGame={restartGame}/>
          : 
         <GameBody setPlayerPick={setPlayerPick}  getHousePick={getHousePick}/>}
-
-        <RulesModal />
+        <Suspense fallback={<>Loading...</>}>
+            <RulesModal />
+        </Suspense>
         <RulesButton />
         </main>
     );
