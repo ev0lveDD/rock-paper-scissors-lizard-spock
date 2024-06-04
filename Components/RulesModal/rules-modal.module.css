@@ -15,27 +15,34 @@
 }
 
 .contentWraper {
-    width: 22vw;
-    height: 50vh;
+    width: 100vw;
+    height: 100vh;
     background-color: #fff;
-    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+}
+
+.gameRulesImage {
+    width: 80vw;
+    height: 35vh;
+    position: absolute;
 }
 
 .modalHeader {
     width: 85%;
+    height: 75vh;
     margin: 1.5rem 0 2rem 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
 .modalHeader h1 {
     color: hsl(229, 25%, 31%);
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .modalHeader button {
@@ -43,3 +50,46 @@
     border: none;
     cursor: pointer;
 }
+
+.moduleCloseIcon {
+    width: 24px;
+    height: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .contentWraper {
+        width: 22vw;
+        height: 50vh;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .gameRulesImage {
+        width: 225px;
+        height: 200px;
+        position:relative;
+    }
+    
+    .modalHeader {
+        width: 85%;
+        height: auto;
+        margin: 1.5rem 0 2rem 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modalHeader h1 {
+        font-size: 24px;
+    }
+
+    .moduleCloseIcon {
+        width: 16px;
+        height: 16px;
+    }
+  
+  }

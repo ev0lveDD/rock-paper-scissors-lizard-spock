@@ -22,11 +22,11 @@ export default function RulesModal() {
                             <h1>RULES</h1>
                             <Link href={"/"}>
                                 <button>
-                                    <Image alt="Close Icon" src={closeIcon} width={18} height={18}/>
+                                    <Image className={classes.moduleCloseIcon} alt="Close Icon" src={closeIcon}/>
                                 </button>
                             </Link>
                         </div>
-                        <Image alt="Rules Image" src={rulesImage} width={225} height={200}/>
+                        <Image className={classes.gameRulesImage} alt="Rules Image" src={rulesImage}/>
                     </div>
                 </dialog>
             }
