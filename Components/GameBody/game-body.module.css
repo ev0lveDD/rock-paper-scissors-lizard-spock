@@ -43,6 +43,7 @@
     cursor: pointer;
     transition-property: transform;
     transition-duration: .6s;
+    box-shadow: inset lightgrey 0px 5px;
   }
   
   .gameBody button:active {
