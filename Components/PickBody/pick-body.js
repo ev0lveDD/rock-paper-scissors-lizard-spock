@@ -17,8 +17,7 @@ export default function PickBody({playerPick, housePick, winner, restartGame}) {
                     <Image 
                     src={playerPick === "paper" ? paperIcon : playerPick === "scissors" ? scissorsIcon : playerPick === "rock" ? rockIcon : null} 
                     alt={playerPick + " Icon"} 
-                    height={75} 
-                    width={75}/>
+                    className={classes.buttonIcon}/>
                 </button>
                 <div className={winner==="Player" ? classes.circleWave : classes.noWave}></div>
                 <div className={winner==="Player" ? classes.circleWave2 : classes.noWave}></div>
@@ -37,8 +36,7 @@ export default function PickBody({playerPick, housePick, winner, restartGame}) {
                         <Image 
                             src={housePick === "paper" ? paperIcon : housePick === "scissors" ? scissorsIcon : housePick === "rock" ? rockIcon : null} 
                             alt={playerPick + " Icon"} 
-                            height={75} 
-                            width={75}/>
+                            className={classes.buttonIcon}/>
                     </button>
                 : <div className={classes.pickLoaderContainer}><div className={classes.pickLoader}></div></div>}
                 <div className={winner==="House" ? classes.circleWave : classes.noWave}></div>
