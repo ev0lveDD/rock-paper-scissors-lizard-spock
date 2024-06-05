@@ -29,13 +29,14 @@ export default function PickBody({playerPick, housePick, winner, restartGame}) {
                     <button onClick={() => {restartGame()}}>PLAY AGAIN</button>
                 </div> 
                 : null}
+
             <div className={classes.pickColumn}>
                 <p>THE HOUSE PICKED</p>
                 {housePick ? 
                     <button className={housePick === "paper" ? classes.paperButton : housePick === "scissors" ? classes.scissorsButton : housePick === "rock" ? classes.rockButton : null} >
                         <Image 
                             src={housePick === "paper" ? paperIcon : housePick === "scissors" ? scissorsIcon : housePick === "rock" ? rockIcon : null} 
-                            alt={playerPick + " Icon"} 
+                            alt={housePick + " Icon"} 
                             className={classes.buttonIcon}/>
                     </button>
                 : <div className={classes.pickLoaderContainer}><div className={classes.pickLoader}></div></div>}
