@@ -103,6 +103,12 @@
     border-radius: 50%;
     background: #17223e;
   }
+
+  
+  .buttonIcon {
+    width: 45px;
+    height: 45px;
+  }
   
   @keyframes waves {
     0% {

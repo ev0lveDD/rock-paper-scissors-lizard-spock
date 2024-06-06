@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import PlayerPickColumn from "../PlayerPickColumn/player-pick-column";
+import PickResultColumn from "../PickResultColumn/pick-result-column";
 import paperIcon from "@/public/icon-paper.svg";
 import scissorsIcon from "@/public/icon-scissors.svg";
 import rockIcon from "@/public/icon-rock.svg";
@@ -18,12 +19,7 @@ export default function PickBody({playerPick, housePick, winner, restartGame}) {
                 playerName="Player"
                 winner={winner}
             />
-            {winner ? 
-                <div className={classes.pickResultColumn}>
-                    <h1>{winner==="Player" ? "YOU WIN" : winner==="House" ? "YOU LOSE" : "DRAW"}</h1>
-                    <button onClick={() => {restartGame()}}>PLAY AGAIN</button>
-                </div> 
-                : null}
+            {winner ? <PickResultColumn winner={winner} restartGame={restartGame}/> : null}
             <PlayerPickColumn 
                 text="THE HOUSE PICKED"
                 playerPick={housePick}
