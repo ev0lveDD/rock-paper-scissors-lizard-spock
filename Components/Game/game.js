@@ -20,16 +20,6 @@ export default function Game() {
         setTimeout(houseRoll, 3000);
     }
 
-    useEffect(()=>{
-        setTimeout(checkWinner,2000);
-    },[housePick]);
-
-    useEffect(() => {
-        if(winner==="Player"){
-            setScore(previous => previous +1);
-        }
-    }, [winner])
-
     function houseRoll(){
         const roll = Math.floor(Math.random() * 3);
         if(roll===0){
@@ -72,6 +62,30 @@ export default function Game() {
         setHousePick(null);
         setWinner(null);
     }
+
+    
+    useEffect(()=>{
+        setTimeout(checkWinner,2000);
+    }, [housePick]);
+
+    useEffect(() => {
+        if(winner==="Player"){
+            setScore(previous => previous +1);
+        }
+    }, [winner]);
+
+        useEffect(() => {
+        const localData = localStorage.getItem('localScore');
+        if (localData !== null) {
+            setScore(JSON.parse(localData))
+            console.log(score);
+        }
+    }, []);
+
+    useEffect(() => {
+        window.localStorage.setItem('localScore', JSON.stringify(score));
+        console.log(localStorage.getItem('localScore'));
+    }, [score]);
 
     return (
         <main className={classes.main}>
