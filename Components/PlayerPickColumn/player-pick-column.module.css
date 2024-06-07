@@ -10,6 +10,14 @@
   border: 15px solid var(--rock-color);
 }
 
+.lizardButton {
+  border: 15px solid var(--lizard-color);
+}
+
+.spockButton {
+  border: 15px solid var(--spock-color);
+}
+
 .pickColumn {
     display: flex;
     position: relative;
@@ -106,7 +114,7 @@
 
   
   .buttonIcon {
-    width: 45px;
+    width: 35px;
     height: 45px;
   }
   
@@ -142,8 +150,12 @@
     }
     
     .buttonIcon {
-      width: 75px;
+      width: 65px;
       height: 75px;
+    }
+    
+    .rockButton {
+      border: 25px solid var(--rock-color);
     }
 
     .paperButton {
@@ -153,10 +165,16 @@
     .scissorsButton {
       border: 25px solid var(--scissors-color);
     }
-    
-    .rockButton {
-      border: 25px solid var(--rock-color);
+
+    .lizardButton {
+      border: 25px solid var(--lizard-color);
     }
+
+
+    .spockButton {
+      border: 25px solid var(--spock-color);
+    }
+
 
     .pickLoaderContainer {
       width: 225px;

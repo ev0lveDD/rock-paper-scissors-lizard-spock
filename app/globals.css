@@ -93,6 +93,8 @@ body {
   --scissors-color: hsl(39, 89%, 49%);
   --paper-color: hsl(230, 89%, 62%);
   --rock-color: hsl(349, 71%, 52%);
+  --lizard-color: hsl(261, 73%, 60%);
+  --spock-color: hsl(189, 59%, 53%);
   background: radial-gradient(circle at center, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
 

@@ -21,34 +21,70 @@ export default function Game() {
     }
 
     function houseRoll(){
-        const roll = Math.floor(Math.random() * 3);
+        const roll = Math.floor(Math.random() * 5);
         if(roll===0){
             setHousePick("rock");
         } else if(roll===1) {
             setHousePick("paper")
-        } else {
+        } else if(roll===2) {
             setHousePick("scissors")
+        } else if(roll===3) {
+            setHousePick("lizard")
+        } else {
+            setHousePick("spock")
         }
     }
 
     function checkWinner() {
-        if(playerPick === "rock" & housePick === "paper") {
+        if (playerPick === "rock" & housePick === "paper") {
             setWinner("House");
         } else if (playerPick === "rock" & housePick === "scissors") {
             setWinner("Player")
         } else if (playerPick === "rock" & housePick === "rock") {
             setWinner("Draw")
+        } else if (playerPick === "rock" & housePick === "lizard") {
+            setWinner("Player")
+        }  else if (playerPick === "rock" & housePick === "spock") {
+            setWinner("House")
         } else if (playerPick === "paper" & housePick === "rock") {
             setWinner("Player")
         } else if (playerPick === "paper" & housePick === "scissors") {
             setWinner("House")
         } else if (playerPick === "paper" & housePick === "paper") {
             setWinner("Draw")
+        }  else if (playerPick === "paper" & housePick === "lizard") {
+            setWinner("House")
+        }  else if (playerPick === "paper" & housePick === "spock") {
+            setWinner("Player")
         } else if (playerPick === "scissors" & housePick === "paper") {
             setWinner("Player")
         } else if (playerPick === "scissors" & housePick === "rock") {
             setWinner("House")
         } else if (playerPick === "scissors" & housePick === "scissors") {
+            setWinner("Draw")
+        }   else if (playerPick === "scissors" & housePick === "lizard") {
+            setWinner("Player")
+        }  else if (playerPick === "scissors" & housePick === "spock") {
+            setWinner("House")
+        }  else if (playerPick === "lizard" & housePick === "rock") {
+            setWinner("House")
+        } else if (playerPick === "lizard" & housePick === "paper") {
+            setWinner("Player")
+        } else if (playerPick === "lizard" & housePick === "scissors") {
+            setWinner("House")
+        }   else if (playerPick === "lizard" & housePick === "lizard") {
+            setWinner("Draw")
+        }  else if (playerPick === "lizard" & housePick === "spock") {
+            setWinner("Player")
+        } else if (playerPick === "spock" & housePick === "rock") {
+            setWinner("Player")
+        } else if (playerPick === "spock" & housePick === "paper") {
+            setWinner("House")
+        } else if (playerPick === "spock" & housePick === "scissors") {
+            setWinner("Player")
+        }   else if (playerPick === "spock" & housePick === "lizard") {
+            setWinner("House")
+        }  else if (playerPick === "spock" & housePick === "spock") {
             setWinner("Draw")
         } else {
             null;

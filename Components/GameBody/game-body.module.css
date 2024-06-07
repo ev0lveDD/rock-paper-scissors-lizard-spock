@@ -1,11 +1,16 @@
 
 .gameBody {
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: center;
-    margin: 6rem;
+    margin: 4rem 0 0 0;
   }
   
+  .gameBodyBackground {
+    height: 240px;
+    width: 230px;
+  }
+
   .gameBodyBackgroundWraper {
     z-index: 1;
     margin-top: 4rem;
@@ -18,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
   }
   
   .gameButtonTopRow {
@@ -26,18 +31,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    margin-top: 2rem;
+  }
+
+  .gameButtonMiddleRow {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
   }
   
   .gameButtonBottomRow {
     flex-direction: row;
+    display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1.5rem;
   }
   
   .gameBody button {
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: #fff;
     cursor: pointer;
@@ -51,21 +66,79 @@
   }
   
   .paperButton {
-    border: 15px solid var(--paper-color);
+    border: 12px solid var(--paper-color);
   }
   
   .scissorsButton {
-    border: 15px solid var(--scissors-color);
+    border: 12px solid var(--scissors-color);
   }
   
   .rockButton {
-    border: 15px solid var(--rock-color);
+    border: 12px solid var(--rock-color);
+  }
+
+  .spockButton {
+    border: 12px solid var(--spock-color);
+  }
+
+  .lizardButton {
+    border: 12px solid var(--lizard-color);
   }
 
   @media only screen and (min-width: 768px) {
 
     .gameBody {
-      margin: 0;
+      margin-top: 6rem;
+    }
+
+    .gameBody button {
+      width: 125px;
+      height: 125px;
+    }
+
+    .gameBodyBackground {
+      height: 285px;
+      width: 300px;
+    }
+
+    .paperButton {
+      border: 15px solid var(--paper-color);
+    }
+    
+    .scissorsButton {
+      border: 15px solid var(--scissors-color);
+    }
+    
+    .rockButton {
+      border: 15px solid var(--rock-color);
+    }
+  
+    .spockButton {
+      border: 15px solid var(--spock-color);
+    }
+  
+    .lizardButton {
+      border: 15px solid var(--lizard-color);
+    }
+
+    .gameButtonTopRow {
+      margin-top: 2rem;
+    }
+  
+    .gameButtonMiddleRow {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9rem;
+    }
+    
+    .gameButtonBottomRow {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
     }
   
   }

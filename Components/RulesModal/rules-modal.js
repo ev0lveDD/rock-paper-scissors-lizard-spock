@@ -5,7 +5,7 @@ import {useSearchParams, usePathname} from "next/navigation";
 import Link from "next/link";
 
 import closeIcon from "@/public/icon-close.svg";
-import rulesImage from "@/public/image-rules.svg"
+import rulesImage from "@/public/image-rules-bonus.svg"
 
 export default function RulesModal() {
 

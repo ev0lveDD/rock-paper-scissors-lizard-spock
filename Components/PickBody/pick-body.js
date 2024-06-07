@@ -5,9 +5,7 @@ import { useState } from "react";
 
 import PlayerPickColumn from "../PlayerPickColumn/player-pick-column";
 import PickResultColumn from "../PickResultColumn/pick-result-column";
-import paperIcon from "@/public/icon-paper.svg";
-import scissorsIcon from "@/public/icon-scissors.svg";
-import rockIcon from "@/public/icon-rock.svg";
+
 
 export default function PickBody({playerPick, housePick, winner, restartGame}) {
 
