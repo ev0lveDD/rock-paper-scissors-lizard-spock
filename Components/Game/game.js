@@ -53,8 +53,6 @@ export default function Game() {
         } else {
             null;
         }
-        console.log(housePick);
-        console.log(playerPick);
     }
 
     function restartGame() {
@@ -78,13 +76,11 @@ export default function Game() {
         const localData = localStorage.getItem('localScore');
         if (localData !== null) {
             setScore(JSON.parse(localData))
-            console.log(score);
         }
     }, []);
 
     useEffect(() => {
         window.localStorage.setItem('localScore', JSON.stringify(score));
-        console.log(localStorage.getItem('localScore'));
     }, [score]);
 
     return (
