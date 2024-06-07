@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4rem 0 0 0;
+    margin: 2rem 0 0 0;
   }
   
   .gameBodyBackground {
@@ -88,17 +88,23 @@
   @media only screen and (min-width: 768px) {
 
     .gameBody {
-      margin-top: 6rem;
+      margin: 0 0 2rem 0;
+      justify-content: top;
     }
 
     .gameBody button {
-      width: 125px;
-      height: 125px;
+      width: 115px;
+      height: 115px;
     }
 
     .gameBodyBackground {
-      height: 285px;
-      width: 300px;
+      height: 265px;
+      width: 280px;
+    }
+
+    .gameBodyBackgroundWraper {
+      z-index: 1;
+      margin-top: 2rem;
     }
 
     .paperButton {
