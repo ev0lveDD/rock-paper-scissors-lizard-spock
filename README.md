@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ROCK, PAPER, SCISSORS, LIZARD, SPOCK GAME
 
-## Getting Started
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Preview](#Preview)
 
-First, run the development server:
+## General info
+This project consisted of creating Rock, Paper, Scissors, Lizard, Spock Game from The Big Bang Theory. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Your users should be able to:
+* Play Rock, Paper, Scissors, Lizard, Spock against the computer
+* View the optimal layout for the interface depending on their device's screen size
+* See hover and focus states for all interactive elements on the page
+* Maintain the state of the score after refreshing the browser
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project was written in NEXT.JS, as part of a consolidation of the acquired knowledge.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Link: https://rpsls-ev0.netlify.app/
+	
+## Technologies
+Project is created with:
+* NEXT.JS
+* React
+* HTML
+* CSS
+* JavaScript
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Preview
 
-## Learn More
+Desktop view - Start Screen
+* ![rps1](https://github.com/user-attachments/assets/cb562cee-6755-43ad-8803-113c4717eeb0)
 
-To learn more about Next.js, take a look at the following resources:
+Desktop view - Round Screen
+* ![rps2](https://github.com/user-attachments/assets/8a53d061-693b-4d17-9abf-08cdcbdb542d)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Desktop view - Rules Screen
+* ![rps3](https://github.com/user-attachments/assets/b54340fc-ca22-46d4-b2bd-c8bea9e8ac68)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Mobile view - Start Screen
+* ![rpsls-ev0 netlify app_(iPhone 14 Pro Max)](https://github.com/user-attachments/assets/feb9357f-c20d-4c05-8273-babae2b76238)
+
+
+Mobile view - Round Screen
+* ![rpsls-ev0 netlify app_(iPhone 14 Pro Max) (1)](https://github.com/user-attachments/assets/50ca6220-af44-4d93-9f7c-f9636704a89a)
+
+
+Mobile view - Rules Screen
+* ![rpsls-ev0 netlify app_(iPhone 14 Pro Max) (2)](https://github.com/user-attachments/assets/fb623d1d-c1b4-4e09-95e2-74669b3621fc)
+
+
+
