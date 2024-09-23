@@ -42,7 +42,8 @@ Desktop view - Rules Screen
 
 
 Mobile view - Start Screen
-* ![rpsls-ev0 netlify app_(iPhone 14 Pro Max)](https://github.com/user-attachments/assets/feb9357f-c20d-4c05-8273-babae2b76238)
+* ![rpsm1](https://github.com/user-attachments/assets/e4eaee91-ecb2-4041-bfc3-8dec08d1afbd)
+
 
 
 Mobile view - Round Screen
