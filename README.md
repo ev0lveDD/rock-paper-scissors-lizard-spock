@@ -47,11 +47,13 @@ Mobile view - Start Screen
 
 
 Mobile view - Round Screen
-* ![rpsls-ev0 netlify app_(iPhone 14 Pro Max) (1)](https://github.com/user-attachments/assets/50ca6220-af44-4d93-9f7c-f9636704a89a)
+* ![rpsm2](https://github.com/user-attachments/assets/a61d300a-ad21-41e8-a9ba-3bfe8ba82096)
+
 
 
 Mobile view - Rules Screen
-* ![rpsls-ev0 netlify app_(iPhone 14 Pro Max) (2)](https://github.com/user-attachments/assets/fb623d1d-c1b4-4e09-95e2-74669b3621fc)
+* ![rpsm3](https://github.com/user-attachments/assets/18b62e8e-1644-467e-ad36-519b9df09ec6)
+
 
 
 
