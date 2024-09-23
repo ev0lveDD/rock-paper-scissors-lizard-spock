@@ -8,7 +8,7 @@
 ## General info
 This project consisted of creating Rock, Paper, Scissors, Lizard, Spock Game from The Big Bang Theory. 
 
-Your users should be able to:
+Users should be able to:
 * Play Rock, Paper, Scissors, Lizard, Spock against the computer
 * View the optimal layout for the interface depending on their device's screen size
 * See hover and focus states for all interactive elements on the page
